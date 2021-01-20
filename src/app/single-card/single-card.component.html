@@ -1,0 +1,19 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ singleNew.title }}</mat-card-title>
+    <mat-card-subtitle>Source: {{ singleNew.source.name }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="singleNew.urlToImage"
+    onerror="this.onerror=null;this.src='https://iconfs.net/otaman/images/news-default.jpg';"
+    alt="News"
+  />
+  <mat-card-content>
+    <p>{{singleNew.description}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="backToNews()">Back to news</button>
+  </mat-card-actions>
+</mat-card>

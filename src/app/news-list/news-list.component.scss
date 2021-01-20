@@ -1,0 +1,21 @@
+.container {
+  max-width: 1024px;
+}
+
+a {
+  text-decoration: none;
+  max-width: 70%;
+}
+
+.mat-card {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+::ng-deep .mat-paginator {
+  .mat-paginator-container {
+    width: 25%;
+    margin: 0 auto;
+  }
+}

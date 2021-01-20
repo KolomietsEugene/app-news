@@ -1,0 +1,23 @@
+<mat-card
+  *ngFor="let newsItem of this.getNewsPage(); let i = index"
+  id="{{ i }}"
+  (click)="cardClicked($event)"
+>
+  <mat-card-title-group>
+    <img
+      mat-card-avatar
+      src="{{ newsItem.urlToImage }}"
+      onerror="this.onerror=null;this.src='https://iconfs.net/otaman/images/news-default.jpg';"
+    />
+
+    <mat-card-title>{{ newsItem.title }}</mat-card-title>
+    <mat-card-subtitle>Source: {{ newsItem.source.name }}</mat-card-subtitle>
+  </mat-card-title-group>
+</mat-card>
+
+<mat-paginator
+  [length]="this.filteredNews.length"
+  [pageSize]="10"
+  (page)="OnPageChange($event)"
+>
+</mat-paginator>
