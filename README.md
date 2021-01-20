@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
 
+## Express Server
+
+Inside project exist folder named app-news-server - download this folder, go inside -> call cmd -> write `node index.js`. It will start server with news data on localhost:3000 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
