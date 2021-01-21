@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backend: 'http://localhost:3000'
+  backend: 'https://app-news-server.herokuapp.com/news'
 };
